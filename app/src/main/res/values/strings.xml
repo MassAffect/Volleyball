@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Volleyball</string>
+    <string name="teamAText">Team A Score!</string>
+    <string name="scoreForA">Score for team A</string>
+    <string name="blocksTextA">Team A Blocks!</string>
+    <string name="blockForA">Block for Team A</string>
+    <string name="teamBText">Team B Score!</string>
+    <string name="blocksTextB">Team B Blocks!</string>
+    <string name="scoreForB">Score for team B</string>
+    <string name="blockForB">Block for Team B</string>
+    <string name="nowServingA">Team A Now Serving</string>
+    <string name="nowServingB">Team B Now Serving</string>
+    <string name="imageDescription">This image is a logo representing the We Serve First Foundation</string>
+    <string name="reset">Reset!</string>
+
 </resources>

@@ -18,13 +18,14 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/teamAText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:fontFamily="san-serif-medium"
                 android:gravity="center_horizontal"
                 android:padding="4dp"
-                android:text="Team A!"
+                android:text="@string/teamAText"
                 android:textColor="#616161"
                 android:textSize="14sp" />
 
@@ -36,7 +37,7 @@
                 android:gravity="center_horizontal"
                 android:padding="4dp"
                 android:textColor="#000000"
-                android:textSize="56sp" />
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/scoreForA"
@@ -45,8 +46,45 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="scoreForA"
-                android:text="Score For Team A" />
+                android:text="@string/scoreForA" />
+
+            <TextView
+                android:id="@+id/blocksTextA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="san-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="@string/blocksTextA"
+                android:textColor="#616161"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/team_a_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="san-serif-light"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/blockForA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="blockForA"
+                android:text="@string/blockForA" />
+
         </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -55,13 +93,14 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/teamBText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:fontFamily="san-serif-medium"
                 android:gravity="center_horizontal"
                 android:padding="4dp"
-                android:text="Team B!"
+                android:text="@string/teamBText"
                 android:textColor="#616161"
                 android:textSize="14sp" />
 
@@ -73,7 +112,7 @@
                 android:gravity="center_horizontal"
                 android:padding="4dp"
                 android:textColor="#000000"
-                android:textSize="56sp" />
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/scoreForB"
@@ -82,16 +121,52 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="scoreForB"
-                android:text="Score For Team B" />
+                android:text="@string/scoreForB" />
+
+            <TextView
+                android:id="@+id/blocksTextB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="san-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="@string/blocksTextB"
+                android:textColor="#616161"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/team_b_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="san-serif-light"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/blockForB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:onClick="blockForB"
+                android:text="@string/blockForB" />
+
+
         </LinearLayout>
     </LinearLayout>
 
-
+    <!--Re-use of the image was given by the foundation Co-creator https://www.facebook.com/weservefirst/photos/a.184578145213608.1073741829.100316186973138/368623456809075/?type=3&theater  5/2/2018-->
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="295dp"
         android:layout_below="@+id/horizontalParent"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="16dp"
         android:padding="24dp"
+        android:contentDescription="@string/imageDescription"
         android:src="@drawable/choosetoserve" />
 
     <TextView
@@ -113,12 +188,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="72dp"
         android:onClick="reset"
         android:padding="8dp"
-        android:text="Reset!"
+        android:text="@string/reset"
         android:visibility="visible" />
 
 
